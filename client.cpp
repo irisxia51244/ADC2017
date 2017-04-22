@@ -113,7 +113,7 @@ int main(void)
 				nread = fread(buff, 1, 256, fp);
 				write(sockfd, buff, nread);			
 			        
-				if(read(sockfd, buffer, 256)>0)
+				 if(read(sockfd, buffer, 256)>0)
 				{
 					printf("%s\n",time_stamp());
 		 			printf("%s \n", buffer);
@@ -121,26 +121,26 @@ int main(void)
 				fclose(fp);
 				break;
 			case '6':
-                               	send(sockfd, buffer, bufsize, 0);
-                               	printf("%s\n",time_stamp());
-                               	printf("Enter the target file name\n");
-                               	cin >> buffer;
-                               	write(sockfd, buffer, 256);
-                               	if(*buffer == '#') return 0;
+                              	send(sockfd, buffer, bufsize, 0);
+                              	printf("%s\n",time_stamp());
+                              	printf("Enter the target file name\n");
+                              	cin >> buffer;
+                              	write(sockfd, buffer, 256);
+                              	if(*buffer == '#') return 0;
 				
-                        	fp  = fopen(buffer, "ab");
-                        	if(fp == NULL)
-                        	{
-                                	printf("%s\n",time_stamp());
-                                	printf(">>Fail to open this file\n");
-                        	}
+                       	fp  = fopen(buffer, "ab");
+                       	if(fp == NULL)
+                       	{
+                               	printf("%s\n",time_stamp());
+                               	printf(">>Fail to open this file\n");
+                       	}
 
 				if(read(sockfd, buffer, 256)>0)
-                                {
+                               {
 					fwrite(buffer, 1, 256, fp);
-                                        printf("%s\n",time_stamp());
+                                       printf("%s\n",time_stamp());
 					printf(">>Succcessfully download file\n");
-                                }
+                               }
 				fclose(fp);
 				break;
 			default:

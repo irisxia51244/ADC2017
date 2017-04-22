@@ -111,7 +111,7 @@ do {
     {
 	printf("%s\n",time_stamp());
     	printf("Client ask for function %s \n", buffer);
-    }
+     }
 	switch(*buffer) {
 		case '1':
 			read(server, buffer, 256);
@@ -182,6 +182,7 @@ do {
 				printf("%s\n",time_stamp());
 				printf("%s\n", buffer);
 			closedir(dir);
+			break;
 		case '5':
 			read(server, buffer, 256);
 			FILE *fp;
@@ -222,8 +223,8 @@ do {
 		   	//printf("%s\n",time_stamp());
 		  	//printf("invalid function number \n");
 			break;
-	}
+        	  }
+	
 }while(*buffer != '#');   
-
 return 0;
 }
