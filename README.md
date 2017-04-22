@@ -16,5 +16,11 @@ Usage
 ...
 ```
 - To run the server:
+```
+...
+```
 - To run the client:
+```
+...
+```
 - 
