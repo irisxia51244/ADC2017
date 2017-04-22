@@ -12,6 +12,9 @@ operations:().
 Usage
 ------
 - To compile:
+```
+...
+```
 - To run the server:
 - To run the client:
 - 
