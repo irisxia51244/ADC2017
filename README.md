@@ -13,14 +13,19 @@ Usage
 ------
 - To compile:
 ```
-...
+g++ -o server server.cpp
+```
+```
+g++ -o client client.cpp
 ```
 - To run the server:
 ```
-...
+./server
 ```
 - To run the client:
 ```
-...
+./client
 ```
-- 
+- To make operations:
+follow the instruction, enter the corresponding number of the operation,
+then, enter the desired file name.
