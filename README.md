@@ -1,6 +1,9 @@
 ADC 2017
 Project 1
 ======
+Group Member
+------
+(name and student id)
 
 General Purpose
 ------
