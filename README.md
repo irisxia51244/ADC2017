@@ -21,12 +21,11 @@ g++ -o server server.cpp
 ```
 g++ -o client client.cpp
 ```
-- To run the server:
+- First, to run the server:
 ```
 ./server
-Server should run firstly.
 ```
-- To run the client:
+- Then, to run the client:
 ```
 ./client
 ```
