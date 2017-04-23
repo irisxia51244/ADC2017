@@ -106,7 +106,7 @@ Enter the target file name
 [2017/03/22 17:03:28]
 .    ..    .git    .README.md.swp    client    README.md    server.cpp    server.out  
 ```
-4. opendir:open the folder and return the file list under this folder.
+4. opendir:client should enter the function number "4" and then enter the folder name to check the file name list under this folder.
 ```
 Please enter the function number:
 4
@@ -116,7 +116,7 @@ test_opendir
 [2017/03/22 17:07:47]
 .    ..    file1    file2    file3
 ```
-5. upload
+5. upload:client should enter the function number "5" and then enter the file name to upload the file to server. This file should exist in client locally.
 ```
 Please enter the function number:
 5
@@ -126,7 +126,7 @@ Enter the target file name
 [2017/03/22 17:12:26]
 >>Succcessfully upload file
 ```
-6. download
+6. download:client should enter the function number "6" and then enter the file name to download the file from server. This file should exist in server.
 ```
 Please enter the function number:
 5
