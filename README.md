@@ -34,7 +34,7 @@ Server should run firstly.
 Follow the instruction, enter the corresponding number of the operation,
 then, enter the desired file name.
 
-This file server can support 6 operation:
+This file server can support 6 operations:
 1. read 
 2. mkdir
 3. rmdir
